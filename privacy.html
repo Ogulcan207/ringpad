@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ringpad gizlilik politikası</title>
+<meta name="description" content="Ringpad Android uygulaması ve Windows alıcısının gizlilik politikası.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #18181b;
+    --muted: #52525b;
+    --line: #e4e4e7;
+    --accent: #3d6bff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #09090b;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+      --line: #27272a;
+      --accent: #8eb0ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+  p, li { color: var(--text); }
+  .meta { color: var(--muted); margin: 0 0 1.5rem; }
+  nav a, a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3rem 0; }
+  ul { padding-left: 1.25rem; }
+  code { font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="#tr">Türkçe</a> · <a href="#en">English</a></nav>
+
+  <section id="tr" lang="tr">
+    <h1>Ringpad gizlilik politikası</h1>
+    <p class="meta">Yürürlük: 29 Ekim 2026</p>
+
+    <p>Ringpad, Android telefonu aynı ağdaki ya da Bluetooth ile bağlı bir Windows bilgisayar için klavye ve fareye çevirir. İki parçadan oluşur: Android uygulaması ve Windows alıcısı. Bu sayfa ikisini de kapsar.</p>
+
+    <h2>Kısaca</h2>
+    <p>Ringpad sizinle ilgili hiçbir veri toplamaz, bize ya da başka birine göndermez. Hesap, analitik, reklam ve sunucu yoktur. Telefon yalnızca sizin bilgisayarınızla konuşur.</p>
+
+    <h2>Yazdıklarınız ve fare hareketleri</h2>
+    <p>Telefonda bastığınız tuşlar ve fare hareketleri yalnızca eşleştirdiğiniz bilgisayara gider; hiçbir yerde saklanmaz. Wi-Fi'de bağlantı TLS ile şifrelenir; telefon bilgisayarı sertifika parmak iziyle tanır ve başka bir cihaza bağlanmaz. Bluetooth'ta Windows'un kendi eşleşmesi ve şifrelemesi kullanılır.</p>
+
+    <h2>Cihazınızda saklananlar</h2>
+    <ul>
+      <li><strong>Telefonda:</strong> uygulama ayarları (yerleşim, dil, klavye düzeni, hassasiyet) ve eşleştirdiğiniz bilgisayarlar: adı, son IP adresi, sertifika parmak izi ve bağlantı anahtarı. Bu kayıtlar yedeğe ve yeni telefona taşınmaz; uygulama silinince gider.</li>
+      <li><strong>Bilgisayarda</strong> (<code>%APPDATA%\Ringpad</code> ya da Store sürümünde uygulamanın kendi klasörü): alıcının sertifikası, eşleşmiş telefonların adı, bağlantı anahtarlarının özeti ve son bağlantı zamanı, ayrıca bağlantı olaylarının kaydı (yazdıklarınız kaydedilmez).</li>
+    </ul>
+
+    <h2>Ağ ve izinler</h2>
+    <ul>
+      <li><strong>Yerel ağ:</strong> Telefon, aynı ağdaki Ringpad alıcısını bulmak için ağa küçük bir keşif mesajı yayınlar; alıcı bilgisayar adı ve kimliğiyle yanıt verir. İnternete bağlanılmaz.</li>
+      <li><strong>Bluetooth (Yakındaki cihazlar):</strong> Telefonun bilgisayara klavye ve fare olarak tanıtılması için. Konum izni istenmez, çevre taranmaz.</li>
+      <li><strong>Kamera:</strong> Ringpad kamera izni istemez.</li>
+    </ul>
+
+    <h2>QR ile eşleşme ve Google</h2>
+    <p>"QR okut" düğmesi Google Play hizmetlerinin kod tarayıcısını açar. Tarama ekranını Google sağlar ve görüntü telefonda işlenir; Ringpad yalnızca okunan eşleşme adresini alır. Google bu hizmet için tanılama ve kullanım ölçümü amacıyla cihaz bilgisi (üretici, model, işletim sistemi sürümü) ve hata kodları toplayabilir. Ayrıntılar: <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google ML Kit veri açıklaması</a> ve <a href="https://policies.google.com/privacy">Google gizlilik politikası</a>. QR kullanmak istemezseniz 6 haneli kodla eşleşebilirsiniz.</p>
+
+    <h2>Çocuklar</h2>
+    <p>Ringpad kimseden kişisel veri toplamadığı için çocuklardan da toplamaz.</p>
+
+    <h2>Değişiklikler ve iletişim</h2>
+    <p>Bu politika değişirse güncel hâli bu sayfada, yeni yürürlük tarihiyle yayınlanır. Sorularınız için: <a href="https://github.com/Ogulcan207/ringpad/issues">github.com/Ogulcan207/ringpad/issues</a></p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h1>Ringpad privacy policy</h1>
+    <p class="meta">Effective: 29 October 2026</p>
+
+    <p>Ringpad turns an Android phone into a keyboard and mouse for a Windows computer on the same network or over Bluetooth. It has two parts: the Android app and the Windows receiver. This page covers both.</p>
+
+    <h2>In short</h2>
+    <p>Ringpad collects no data about you and sends nothing to us or anyone else. There are no accounts, analytics, ads or servers. The phone only talks to your own computer.</p>
+
+    <h2>What you type and pointer movement</h2>
+    <p>Keys and pointer movement go only to the computer you paired, and are not stored anywhere. Over Wi-Fi the connection is encrypted with TLS; the phone recognizes the computer by its certificate fingerprint and will not connect to another device. Over Bluetooth, Windows' own pairing and encryption are used.</p>
+
+    <h2>What is stored on your devices</h2>
+    <ul>
+      <li><strong>On the phone:</strong> app settings (layout, language, keyboard layout, sensitivity) and the computers you paired: name, last IP address, certificate fingerprint and connection key. These are excluded from backups and device transfers, and are removed with the app.</li>
+      <li><strong>On the computer</strong> (<code>%APPDATA%\Ringpad</code>, or the app's own folder in the Store version): the receiver's certificate, paired phones' names, a hash of their connection keys and last connection time, and a log of connection events (what you type is not logged).</li>
+    </ul>
+
+    <h2>Network and permissions</h2>
+    <ul>
+      <li><strong>Local network:</strong> to find the Ringpad receiver, the phone broadcasts a small discovery message on your network; the receiver answers with the computer's name and ID. Nothing goes to the internet.</li>
+      <li><strong>Bluetooth (Nearby devices):</strong> to present the phone to the computer as a keyboard and mouse. No location permission, no scanning.</li>
+      <li><strong>Camera:</strong> Ringpad does not request camera permission.</li>
+    </ul>
+
+    <h2>QR pairing and Google</h2>
+    <p>The "Scan QR" button opens the code scanner from Google Play services. Google provides the scanning screen and the image is processed on the phone; Ringpad only receives the pairing address that was read. For this service Google may collect device information (manufacturer, model, OS version) and error codes for diagnostics and usage analytics. Details: <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy">Google privacy policy</a>. If you prefer not to use QR, you can pair with the six-digit code.</p>
+
+    <h2>Children</h2>
+    <p>Ringpad collects no personal data from anyone, including children.</p>
+
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, the current version is published on this page with a new effective date. Questions: <a href="https://github.com/Ogulcan207/ringpad/issues">github.com/Ogulcan207/ringpad/issues</a></p>
+  </section>
+</main>
+</body>
+</html>

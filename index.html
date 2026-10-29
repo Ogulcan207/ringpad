@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ringpad</title>
+<meta name="description" content="Ringpad: Android telefonunuzu Windows bilgisayarınızın klavyesi ve faresi yapar.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #18181b;
+    --muted: #52525b;
+    --line: #e4e4e7;
+    --accent: #3d6bff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #09090b;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+      --line: #27272a;
+      --accent: #8eb0ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  header { display: flex; align-items: center; gap: .75rem; margin-bottom: .5rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+  .lead { color: var(--muted); margin: 0 0 1.5rem; font-size: 1.1rem; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3rem 0; }
+  ol, ul { padding-left: 1.25rem; }
+  .button {
+    display: inline-block; padding: .6rem 1rem; border-radius: .6rem;
+    background: var(--accent); color: #ffffff; text-decoration: none; font-weight: 600;
+  }
+  @media (prefers-color-scheme: dark) { .button { color: #09090b; } }
+  footer { color: var(--muted); font-size: .9rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="40" height="40" viewBox="27 27 54 54" aria-hidden="true">
+      <circle cx="54" cy="54" r="24" fill="none" stroke="#3d6bff" stroke-width="6"/>
+      <path d="M54,37v7M54,64v7M37,54h7M64,54h7" stroke="#3d6bff" stroke-width="4.5" stroke-linecap="round"/>
+      <circle cx="54" cy="54" r="2.4" fill="#3d6bff"/>
+    </svg>
+    <h1>Ringpad</h1>
+  </header>
+
+  <section lang="tr">
+    <p class="lead">Android telefonunuzu Windows bilgisayarınızın klavyesi ve faresi yapar. Yatay klavye, yuvarlak dokunmatik alan; Wi-Fi ya da Bluetooth.</p>
+    <p><a class="button" href="https://github.com/Ogulcan207/ringpad/releases/latest">İndir</a></p>
+
+    <h2>Nasıl başlanır</h2>
+    <ol>
+      <li><strong>Bilgisayar:</strong> <code>Ringpad-…-setup.exe</code>'yi kurun. Ringpad görev çubuğunun sağındaki tepside durur ve ilk açılışta bir QR gösterir.</li>
+      <li><strong>Telefon:</strong> <code>ringpad-…apk</code>'yı kurun, Wi-Fi sekmesinde <em>QR okut</em>'a basın. Kamera yoksa bilgisayarı seçip tepsideki 6 haneli kodu girin.</li>
+      <li>Sonraki bağlantılar tek dokunuş. Bilgisayarda program istemeyen Bluetooth yolu da var.</li>
+    </ol>
+
+    <h2>Güvenlik</h2>
+    <ul>
+      <li>Wi-Fi bağlantısı TLS ile şifrelidir; telefon bilgisayarı parmak iziyle tanır.</li>
+      <li>Eşleşmeden kimse bilgisayara tuş basamaz; yanlış kodlar bekletilir.</li>
+      <li>Hesap, sunucu, analitik ve reklam yok. <a href="privacy.html">Gizlilik politikası</a></li>
+    </ul>
+
+    <h2>Bilinmesi gerekenler</h2>
+    <ul>
+      <li>Kurulum dosyası henüz imzasız; Windows uyarırsa <em>Ek bilgi › Yine de çalıştır</em>. Microsoft Store sürümü hazırlanıyor.</li>
+      <li>APK geliştirme derlemesidir; Google Play sürümü hazırlanıyor.</li>
+      <li>Sorun ya da öneri: <a href="https://github.com/Ogulcan207/ringpad/issues">Issues</a></li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section lang="en">
+    <p class="lead">Turns your Android phone into a keyboard and mouse for your Windows computer. A landscape keyboard and a round touchpad, over Wi-Fi or Bluetooth.</p>
+    <p><a class="button" href="https://github.com/Ogulcan207/ringpad/releases/latest">Download</a></p>
+
+    <h2>Getting started</h2>
+    <ol>
+      <li><strong>Computer:</strong> install <code>Ringpad-…-setup.exe</code>. Ringpad sits in the tray at the right of the taskbar and shows a QR on first launch.</li>
+      <li><strong>Phone:</strong> install <code>ringpad-…apk</code> and tap <em>Scan QR</em> on the Wi-Fi tab. Without a camera, pick the computer and enter the six-digit code from the tray.</li>
+      <li>Later connections take one tap. There is also a Bluetooth mode that needs no software on the computer.</li>
+    </ol>
+
+    <h2>Security</h2>
+    <ul>
+      <li>The Wi-Fi link is encrypted with TLS; the phone recognizes the computer by its fingerprint.</li>
+      <li>Nobody can type on the computer without pairing; wrong codes are slowed down.</li>
+      <li>No accounts, servers, analytics or ads. <a href="privacy.html#en">Privacy policy</a></li>
+    </ul>
+
+    <h2>Good to know</h2>
+    <ul>
+      <li>The installer is not signed yet; if Windows warns, choose <em>More info › Run anyway</em>. A Microsoft Store version is on the way.</li>
+      <li>The APK is a development build; a Google Play version is on the way.</li>
+      <li>Problems or ideas: <a href="https://github.com/Ogulcan207/ringpad/issues">Issues</a></li>
+    </ul>
+  </section>
+
+  <footer>Ringpad</footer>
+</main>
+</body>
+</html>
